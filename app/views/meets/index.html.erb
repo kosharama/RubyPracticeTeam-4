@@ -1,0 +1,30 @@
+<!-- app/views/meets/index.html.erb -->
+<h1>Meets</h1>
+
+<table>
+  <thead>
+  <tr>
+    <th>User</th>
+    <th>Doctor</th>
+    <th>Appointment Date/Time</th>
+    <th colspan="3"></th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <% @meets.each do |meet| %>
+    <tr>
+      <td><%= meet.user.first_name %> <%= meet.user.last_name %></td>
+      <td><%= meet.doctor.first_name %> <%= meet.doctor.last_name %></td>
+      <td><%= meet.appointment_date_time %></td>
+      <td><%= link_to 'Show', meet %></td>
+      <td><%= link_to 'Edit', edit_meet_path(meet) %></td>
+      <td><%= link_to 'Destroy', meet, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Meet', new_meet_path %>

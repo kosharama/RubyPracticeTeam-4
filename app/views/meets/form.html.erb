@@ -1,0 +1,33 @@
+<!-- app/views/meets/_form.html.erb -->
+<%= form_with(model: meet, local: true) do |form| %>
+  <% if meet.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(meet.errors.count, "error") %> prohibited this meet from being saved:</h2>
+
+      <ul>
+        <% meet.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :user_id %>
+    <%= form.collection_select :user_id, User.all, :id, :full_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :doctor_id %>
+    <%= form.collection_select :doctor_id, Doctor.all, :id, :full_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :appointment_date_time %>
+    <%= form.datetime_field :appointment_date_time %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

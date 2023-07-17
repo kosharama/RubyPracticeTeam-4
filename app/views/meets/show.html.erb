@@ -1,0 +1,11 @@
+<!-- app/views/meets/show.html.erb -->
+<h1>Meet</h1>
+
+<p><strong>User:</strong> <%= @meet.user.first_name %> <%= @meet.user.last_name %></p>
+<p><strong>Doctor:</strong> <%= @meet.doctor.first_name %> <%= @meet.doctor.last_name %></p>
+<p><strong>Appointment Date/Time:</strong> <%= @meet.appointment_date_time %></p>
+
+<br>
+
+<%= link_to 'Edit', edit_meet_path(@meet) %> |
+<%= link_to 'Back', meets_path %>
