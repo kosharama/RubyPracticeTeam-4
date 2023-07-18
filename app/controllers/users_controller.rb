@@ -3,12 +3,28 @@ class UsersController < ApplicationController
     @user = User.new
   end
 
+  def show
+    @user = User.find(params[:id])
+  end
+
    def index
     @user = User.new
    end
 
   def sign_up
     @user = User.new
+  end
+
+  def sign_in
+    @user = User.new
+  end
+
+  def login
+    if !session[:user_id]
+      session[:user_id] = 2
+    end
+
+    redirect_to root_path
   end
   def create
     @user = User.new(user_params)

@@ -5,20 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ae3ac6f0-ed15-4079-b112-ebdde6d74975" name="Changes" comment="update">
-      <change afterPath="$PROJECT_DIR$/app/views/share/_navbar.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/users/_form_sign_in.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/users/_form_sign_up.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/users/sign_in.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/users/sign_up.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/meets_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/meets_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/users_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/doctors/_doctor.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/doctors/_doctor.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/doctors/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/doctors/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/meets/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/meets/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/users/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/users/login.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/login.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/meets/form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/meets/_form.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/meets/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/meets/new.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/users/_form_sign_in.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/_form_sign_in.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/development.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db/development.sqlite3" afterDir="false" />
     </list>
@@ -215,7 +209,7 @@
       <workItem from="1689601249197" duration="259000" />
       <workItem from="1689601517639" duration="7184000" />
       <workItem from="1689608760960" duration="17381000" />
-      <workItem from="1689680836666" duration="15025000" />
+      <workItem from="1689680836666" duration="24919000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <option name="closed" value="true" />
@@ -233,7 +227,15 @@
       <option name="project" value="LOCAL" />
       <updated>1689687733416</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="update">
+      <option name="closed" value="true" />
+      <created>1689696028749</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1689696028749</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -256,6 +258,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Appointment@Appointment.rcov" NAME="Appointment Coverage Results" MODIFIED="1689624497839" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Appointment" />
-    <SUITE FILE_PATH="coverage/RubyPracticeTeam_4@RubyPracticeTeam_4.rcov" NAME="RubyPracticeTeam-4 Coverage Results" MODIFIED="1689683955590" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="RubyPracticeTeam-4" />
+    <SUITE FILE_PATH="coverage/RubyPracticeTeam_4@RubyPracticeTeam_4.rcov" NAME="RubyPracticeTeam-4 Coverage Results" MODIFIED="1689700988484" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="RubyPracticeTeam-4" />
   </component>
 </project>

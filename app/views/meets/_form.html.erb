@@ -12,22 +12,27 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :user_id %>
-    <%= form.collection_select :user_id, User.all, :id, :full_name %>
-  </div>
+  <%= form.hidden_field :doctor_id, value: @doctor.id %>
+  <%= form.hidden_field :user_id, value: @user.id %>
 
   <div class="field">
-    <%= form.label :doctor_id %>
-    <%= form.collection_select :doctor_id, Doctor.all, :id, :full_name %>
-  </div>
+    <h2><%=meet.doctor.first_name %>
+    <%=meet.doctor.last_name %></h2>
+    <%=meet.doctor.specialty %>
 
-  <div class="field">
-    <%= form.label :appointment_date_time %>
+
+
+    <h2><%=meet.user.first_name %>
+      <%=meet.user.last_name %></h2>
+
+
+
+    <%= form.label :appointment_date_time %><br>
     <%= form.datetime_field :appointment_date_time %>
-  </div>
 
-  <div class="actions">
-    <%= form.submit %>
+
+
+    <%= form.submit 'Записатись', class: 'button1' %>
+
   </div>
 <% end %>

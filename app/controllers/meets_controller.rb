@@ -11,6 +11,10 @@ class MeetsController < ApplicationController
 
   def new
     @meet = Meet.new
+    @doctor = Doctor.find(params[:doctor_id])
+    @user = User.find(session[:user_id])
+    @meet.doctor = @doctor
+    @meet.user = @user
   end
 
   def create

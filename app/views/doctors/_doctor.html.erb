@@ -2,7 +2,7 @@
   <div class="doc1">
     <h2 class="hdoc"><%= doctor.first_name %> <%= doctor.last_name %></h2>
     <p class="specialty"><%= doctor.specialty %></p>
-    <%= link_to new_doctor_path(doctor_id: doctor.id), class: "button1" do %>
+    <%= link_to new_meet_path(doctor_id: doctor.id), class: "button1" do %>
       <h3 class="button1">Записатись до лікаря</h3>
     <% end %>
   </div>

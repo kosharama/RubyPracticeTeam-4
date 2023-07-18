@@ -7,9 +7,7 @@
         <div class="container3">
           <h1 class="hh1">Вхід</h1>
 
-          <%= form_with(model: @user, url: users_path) do |form| %>
-
-
+          <%= form_with(model: @user, url: login_path) do |form| %>
 
             <div class="form-group">
               <input type="text", class='input1', placeholder="Email">
@@ -19,20 +17,12 @@
               <input type="password", class='input1', placeholder="Password">
             </div>
 
-
-
-
             <div class="button_reg">
               <button type="submit" class="buttonr_reg">Увійти</button>
             </div>
           <% end %>
         </div>
       </div>
-
     </div>
-
-
-
-
   </main>
 </div>

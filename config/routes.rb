@@ -11,7 +11,11 @@ Rails.application.routes.draw do
   get '/users/sign_up', to: 'users#sign_up'
   post '/users/register', to: 'users#create', as: :register
 
-  #get '/login', to: 'users#login', as: 'login'
+  get '/meets/new', to: 'meets#new', as: :new_meet
+
+  #get '/login', to: 'users#sign_in'
+  #post '/login', to: 'users#sign_in'
+
   resources :users
   resources :doctors
   resources :meets
