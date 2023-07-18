@@ -1,16 +1,7 @@
-<main class="content">
-  <div class="main">
-    <div class="container1">
-      <div class="container2">
-        <h class="hh1">Наші лікарі</h><br>
-        <div class="doc1">
-          <% @doctor.each do |doctor| %>
-            <%= render doctor %>
-          <% end %>
-        </div>
-
-      </div>
-    </div>
+<div class="wrapper">
+  <div class="doctor-container">
+    <% @doctor.each do |doctor| %>
+      <%= render doctor %>
+    <% end %>
   </div>
-
-</main>
+</div>

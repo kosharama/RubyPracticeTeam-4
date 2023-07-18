@@ -1,17 +1,38 @@
-<h1>Вход</h1>
+<main class="content">
+  <div class="main">
+    <div class="container1">
 
-<%= form_with(model: @user, url: login_path) do |form| %>
-  <div>
-    <%= form.label :email %>
-    <%= form.email_field :email %>
+      <div class="container3">
+        <h1 class="hh1">Вхід</h1>
+
+        <div class="b-obox-subitem">
+
+          <div class="form-group">
+            <label for="idInputOrderEmail" class="text2">E-mail</label><br>
+            <input type="text" class="input1" id="idInputOrderEmail" name="phone" placeholder="vpopi4@gmail.com" value="" inputmode="text">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="password" class="text2">Пароль<i>*</i></label><br>
+          <input type="text" autocomplete="on" class="input1" id="password" name="password" placeholder="Пароль" value="">
+        </div>
+
+
+
+
+
+
+        </form>
+
+        <div class="button_reg">
+          <button type="submit" class="buttonr_reg">Увійти</button>
+        </div>
+
+      </div>
+    </div>
   </div>
 
-  <div>
-    <%= form.label :password %>
-    <%= form.password_field :password %>
-  </div>
 
-  <div>
-    <%= form.submit 'Войти' %>
-  </div>
-<% end %>
+
+
+</main>

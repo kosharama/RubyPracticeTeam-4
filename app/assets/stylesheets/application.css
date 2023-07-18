@@ -70,6 +70,7 @@ body {
     font-size: 14px;
     text-transform: uppercase;
 }
+
 .nav_link {
     display: inline-block;
     vertical-align: top;
@@ -126,6 +127,7 @@ body {
 .container2 {
     background: #7FD8BE;
     text-align: center;
+    height: auto;
     padding-top: 40px;
     padding-bottom: 40px;
 }
@@ -138,13 +140,13 @@ body {
 }
 
 .doc1 {
-    display: inline-block;
     height: 500px;
     width: 250px;
-    background: #fff;
+    background: #7FD8BE;
     border-radius: 8px;
-    margin-top: 20px;
-
+    margin-top: 50px;
+    margin-right: 40px;
+    text-align: center;
 }
 
 .doc1 img{
@@ -153,62 +155,17 @@ body {
     border-radius: 8px;
 }
 
-
-.doc2 {
-    display: inline-block;
-    height: 500px;
-    width: 250px;
-    background: #fff;
-    border-radius: 8px;
-    margin-left: 100px;
-    margin-top: 20px;
-
+.hdoc{
+    color: #fff;
+    padding-top: 15px;
 }
 
-.doc2 img{
-    max-width: 250px;
-    height: 250px;
-    border-radius: 8px;
+.specialty{
+    color: #fff;
+    font-size: large;
 }
 
-.doc3 {
-    display: inline-block;
-    height: 500px;
-    width: 250px;
-    background: #fff;
-    border-radius: 8px;
-    margin-left: 100px;
-    margin-top: 20px;
 
-}
-
-.doc3 img{
-    max-width: 250px;
-    height: 250px;
-    border-radius: 8px;
-}
-
-.doc4 {
-    display: inline-block;
-    height: 500px;
-    width: 250px;
-    background: #fff;
-    border-radius: 8px;
-    margin-left: 100px;
-    margin-top: 20px;
-
-}
-
-.doc4 img{
-    max-width: 250px;
-    height: 250px;
-    border-radius: 8px;
-
-}
-
-.ul_doc {
-    text-align: left;
-}
 
 /* TABLE */
 
@@ -256,7 +213,8 @@ body {
 }
 
 .button1 {
-    padding: 8px;
+    text-align: center;
+    padding-top: 7px;
     font-size: 18px;
     width: 232px;
     height: 40px;
@@ -267,6 +225,7 @@ body {
     outline: none;
     margin-top: 20px;
     margin-bottom: 20px;
+    margin-left: 9px;
 }
 
 .button1:hover {
@@ -294,9 +253,6 @@ body {
 .buttonr_reg:hover {
     color: #fce38a;
 }
-
-
-
 
 
 
@@ -369,28 +325,17 @@ h2 {
 
 
 
-
-
-/* footer */
-.footer {
-    padding: 10px;
-    background-color: #1A162A;
+.doctor-container {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.wrapper {
+    max-width: 1920px;
+   margin-left: 110px;
 }
 
-.footer {
-    margin-top: auto;
-}
 
-.fot {
-    color: #fff;
-}
-.mail {
-    color: #fff;
-    text-decoration: none;
 
-    transition: color 0.1s linear;
-}
-.mail:hover {
-    color: #fce38a;
 
-}
+

@@ -3,6 +3,14 @@ Rails.application.routes.draw do
   #get '/meets'
   get '/users', to:'users#index'
   get '/doctor/new', to: 'doctors#new', as: :new_doctor
+  get 'user', to: 'users#show'
+
+  get '/users/sign_in', to: 'users#sign_in'
+  post '/users/login', to: 'users#login', as: :login
+
+  get '/users/sign_up', to: 'users#sign_up'
+  post '/users/register', to: 'users#create', as: :register
+
   #get '/login', to: 'users#login', as: 'login'
   resources :users
   resources :doctors

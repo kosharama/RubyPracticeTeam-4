@@ -1,0 +1,56 @@
+
+<div class="page">
+
+  <main class="content">
+    <div class="main">
+      <div class="container1">
+
+        <div class="container3">
+          <h1 class="hh1">Реєстрація користувача</h1>
+
+          <%= form_with(model: @user, url: register_path) do |form| %>
+            <div class="form-group">
+              <%= form.label :last_name, 'Прізвище<i>*</i>'.html_safe %><br>
+              <%= form.text_field :last_name, class: 'input1', placeholder: 'Бутко' %>
+            </div>
+
+            <div class="form-group">
+              <%= form.label :first_name, "Ім'я<i>*</i>".html_safe %><br>
+              <%= form.text_field :first_name, class: 'input1', placeholder: 'Михайло' %>
+            </div>
+
+            <div class="form-group">
+              <%= form.label :birth_date, 'Дата нарождения<i>*</i>'.html_safe %><br>
+              <%= form.date_field :birth_date, class: 'input1' %>
+            </div>
+
+            <div class="form-group">
+              <%= form.label :password, 'Пароль<i>*</i>'.html_safe %><br>
+              <%= form.password_field :password, class: 'input1', placeholder: 'Пароль' %>
+            </div>
+
+            <div class="form-group">
+              <%= form.label :phone, 'Телефон<i>*</i>'.html_safe %><br>
+              <%= form.text_field :phone, class: 'input1', placeholder: '+380660277353', inputmode: 'tel'  %>
+            </div>
+
+
+            <div class="form-group">
+              <%= form.label :email, 'E-mail' %><br>
+              <%= form.text_field :email, class: 'input1', placeholder: 'qwerty@gmail.com' %>
+            </div>
+
+            <div class="button_reg">
+              <%= form.submit 'Реєстрація', class: 'buttonr_reg' %>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+
+
+
+
+  </main>
+</div>
+
