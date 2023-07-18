@@ -1,34 +1,91 @@
-<!-- app/views/users/index.html.erb -->
-<h1>Users</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
 
-<table>
-  <thead>
-  <tr>
-    <th>First Name</th>
-    <th>Last Name</th>
-    <th>Phone</th>
-    <th>Email</th>
-    <th>Birth Date</th>
-    <th colspan="3"></th>
-  </tr>
-  </thead>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@100&display=swap" rel="stylesheet">
 
-  <tbody>
-  <% @users.each do |user| %>
-    <tr>
-      <td><%= user.first_name %></td>
-      <td><%= user.last_name %></td>
-      <td><%= user.phone %></td>
-      <td><%= user.email %></td>
-      <td><%= user.birth_date %></td>
-      <td><%= link_to 'Show', user %></td>
-      <td><%= link_to 'Edit', edit_user_path(user) %></td>
-      <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-    </tr>
-  <% end %>
-  </tbody>
-</table>
+  <title>dr.practice</title>
+</head>
+<body>
 
-<br>
+<div class="page">
+  <header class="header">
+    <div class="container">
+      <div class="header_inner">
+        <div class="header_logo"><a class="logo" >dr.practice</a></div>
 
-<%= link_to 'New User', new_user_path %>
+
+        <nav class="nav">
+          <a class="nav_link" href="sign_in.html">Увійти</a>
+          <a class="nav_link" href="login.html">Реєстрація</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="content">
+    <div class="main">
+      <div class="container1">
+
+        <div class="container3">
+          <h1 class="hh1">Реєстрація користувача</h1>
+
+          <%= form_with(model: @user, url: users_path) do |form| %>
+            <div class="form-group">
+              <%= form.label :last_name, 'Прізвище<i>*</i>'.html_safe %><br>
+              <%= form.text_field :last_name, class: 'input1', placeholder: 'Бутко' %>
+            </div>
+
+            <div class="form-group">
+              <%= form.label :first_name, "Ім'я<i>*</i>".html_safe %><br>
+              <%= form.text_field :first_name, class: 'input1', placeholder: 'Михайло' %>
+            </div>
+
+            <div class="form-group">
+              <%= form.label :birth_date, 'Дата нарождения<i>*</i>'.html_safe %><br>
+              <%= form.date_field :birth_date, class: 'input1' %>
+            </div>
+
+            <div class="form-group">
+              <%= form.label :password, 'Пароль<i>*</i>'.html_safe %><br>
+              <%= form.password_field :password, class: 'input1', placeholder: 'Пароль' %>
+            </div>
+
+            <div class="form-group">
+              <%= form.label :phone, 'Телефон<i>*</i>'.html_safe %><br>
+              <%= form.text_field :phone, class: 'input1', placeholder: '+380660277353', inputmode: 'tel'  %>
+            </div>
+
+
+            <div class="form-group">
+              <%= form.label :email, 'E-mail' %><br>
+              <%= form.text_field :email, class: 'input1', placeholder: 'qwerty@gmail.com' %>
+            </div>
+
+            <div class="button_reg">
+              <%= form.submit 'Реєстрація', class: 'buttonr_reg' %>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+
+
+
+
+  </main>
+
+  <footer class="footer">
+    <div class="foot">
+      <address class="address" title="Контактна інформація">
+        <big dir="ltr" class="fot" style=" font-family:'Verdana'">Пошта: <a class="mail" href="mailto:qwerty@chnu.edu.ua">qwerty@chnu.edu.ua</a></big>
+      </address>
+    </div>
+  </footer>
+</div>
+
+</body>
+</html>
+
