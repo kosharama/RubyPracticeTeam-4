@@ -1,32 +1,16 @@
-<!-- app/views/doctors/index.html.erb -->
-<h1>Doctors</h1>
+<main class="content">
+  <div class="main">
+    <div class="container1">
+      <div class="container2">
+        <h class="hh1">Наші лікарі</h><br>
+        <div class="doc1">
+          <% @doctor.each do |doctor| %>
+            <%= render doctor %>
+          <% end %>
+        </div>
 
-<table>
-  <thead>
-  <tr>
-    <th>First Name</th>
-    <th>Last Name</th>
-    <th>Date of Birth</th>
-    <th>Specialty</th>
-    <th colspan="3"></th>
-  </tr>
-  </thead>
+      </div>
+    </div>
+  </div>
 
-  <tbody>
-  <% @doctors.each do |doctor| %>
-    <tr>
-      <td><%= doctor.first_name %></td>
-      <td><%= doctor.last_name %></td>
-      <td><%= doctor.date_of_birth %></td>
-      <td><%= doctor.specialty %></td>
-      <td><%= link_to 'Show', doctor %></td>
-      <td><%= link_to 'Edit', edit_doctor_path(doctor) %></td>
-      <td><%= link_to 'Destroy', doctor, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-    </tr>
-  <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Doctor', new_doctor_path %>
+</main>

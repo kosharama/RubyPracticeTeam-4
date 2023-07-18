@@ -3,7 +3,7 @@ class DoctorsController < ApplicationController
   before_action :set_doctor, only: [:show, :edit, :update, :destroy]
 
   def index
-    @doctors = Doctor.all
+    @doctor = Doctor.all
   end
 
   def show

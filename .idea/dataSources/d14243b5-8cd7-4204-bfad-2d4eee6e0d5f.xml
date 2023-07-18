@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataSource name="development [2]">
+<dataSource name="development">
   <database-model serializer="dbm" dbms="SQLITE" family-id="SQLITE" format-version="4.48">
     <root id="1">
       <ServerVersion>3.40.1</ServerVersion>

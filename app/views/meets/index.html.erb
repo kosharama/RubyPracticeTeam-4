@@ -1,30 +1,114 @@
-<!-- app/views/meets/index.html.erb -->
-<h1>Meets</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="HTML5.ico" >
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@100&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>dr.practice</title>
+</head>
+<body>
 
-<table>
-  <thead>
-  <tr>
-    <th>User</th>
-    <th>Doctor</th>
-    <th>Appointment Date/Time</th>
-    <th colspan="3"></th>
-  </tr>
-  </thead>
+<div class="page">
+  <header class="header">
+    <div class="container">
+      <div class="header_inner">
+        <div class="header_logo"><a class="logo" href="index.html">dr.practice</a></div>
 
-  <tbody>
-  <% @meets.each do |meet| %>
-    <tr>
-      <td><%= meet.user.first_name %> <%= meet.user.last_name %></td>
-      <td><%= meet.doctor.first_name %> <%= meet.doctor.last_name %></td>
-      <td><%= meet.appointment_date_time %></td>
-      <td><%= link_to 'Show', meet %></td>
-      <td><%= link_to 'Edit', edit_meet_path(meet) %></td>
-      <td><%= link_to 'Destroy', meet, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-    </tr>
-  <% end %>
-  </tbody>
-</table>
 
-<br>
+        <nav class="nav">
+          <a class="nav_link" href="sign_in.html">Увійти</a>
+          <a class="nav_link" href="login.html">Реєстрація</a>
+        </nav>
+      </div>
+    </div>
+  </header>
 
-<%= link_to 'New Meet', new_meet_path %>
+  <main class="content">
+    <div class="main">
+      <div class="container1">
+
+        <form class="container3">
+          <%= form.hidden_field :doctor_id, value: @doctor.id %>
+          <%= form.hidden_field :user_id, value: @user.id %>
+          <div class="calendar">
+            <h2>Выберите день и время приёма:</h2>
+            <div id="datePicker">
+              <input type="date" id="dateInput">
+              <button id="submitButton">Выбрать</button>
+            </div>
+            <div id="timeSlots"></div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+
+
+
+
+  </main>
+
+  <footer class="footer">
+    <div class="foot">
+      <address class="address" title="Контактна інформація">
+        <big dir="ltr" class="fot" style=" font-family:'Verdana'">Пошта: <a class="mail" href="mailto:qwerty@chnu.edu.ua">qwerty@chnu.edu.ua</a></big>
+      </address>
+    </div>
+  </footer>
+</div>
+<script>
+    window.onload = function() {
+        var datePicker = document.getElementById("datePicker");
+        var dateInput = document.getElementById("dateInput");
+        var submitButton = document.getElementById("submitButton");
+        var timeSlots = document.getElementById("timeSlots");
+
+        // Функция для обработки выбора дня
+        submitButton.onclick = function() {
+            var selectedDate = dateInput.value;
+            if (selectedDate === "") {
+                alert("Выберите день!");
+                return;
+            }
+
+            // Очистка предыдущих временных слотов
+            timeSlots.innerHTML = "";
+
+            // Генерация временных слотов с промежутком в 1 час для выбранного дня
+            var startTime = 9; // Начало временных слотов (9:00)
+            var endTime = 17; // Конец временных слотов (17:00)
+
+            for (var i = startTime; i <= endTime; i++) {
+                var button = document.createElement("button");
+                button.innerText = i + ":00";
+                button.classList.add("timeSlotButton"); // Добавление класса "timeSlotButton"
+
+                // Добавление класса "disabled" для прошедших временных слотов
+                var currentDate = new Date();
+                if (selectedDate === currentDate.toISOString().split('T')[0] && i < currentDate.getHours()) {
+                    button.classList.add("disabled");
+                    button.disabled = true;
+                } else {
+                    // Обработчик события клика на доступные временные слоты
+                    button.onclick = function() {
+                        // Очистка выделения временных слотов
+                        var selected = document.getElementsByClassName("selected");
+                        for (var j = 0; j < selected.length; j++) {
+                            selected[j].classList.remove("selected");
+                        }
+
+                        // Выделение выбранного временного слота
+                        this.classList.add("selected");
+                    };
+                }
+
+                timeSlots.appendChild(button);
+            }
+        };
+    };
+</script>
+</body>
+</html>
+
