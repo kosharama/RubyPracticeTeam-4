@@ -340,7 +340,8 @@ h2 {
 .field{
     max-width: 100%;
     text-align: center;
-    margin-left: 700px;
+    margin-left: 735px;
+    margin-top: 200px;
     padding: 40px 20px;
     background: #7FD8BE;
 
@@ -348,3 +349,6 @@ h2 {
     border-radius: 8px;
 }
 
+.h2_meet{
+    color: #fff;
+}

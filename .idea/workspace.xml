@@ -5,15 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ae3ac6f0-ed15-4079-b112-ebdde6d74975" name="Changes" comment="update">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/31e0d68f-c3bb-452e-a3ad-4dbb5949c2ad.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/bd7fc6cf-4d22-4860-b5c3-238850bc4455.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d14243b5-8cd7-4204-bfad-2d4eee6e0d5f.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d14243b5-8cd7-4204-bfad-2d4eee6e0d5f.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/meets_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/meets_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/users_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/doctors/_doctor.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/doctors/_doctor.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/meets/form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/meets/_form.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/meets/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/meets/new.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/users/_form_sign_in.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/_form_sign_in.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/meets/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/meets/_form.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/meets/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/meets/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/users/_form_sign_up.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/_form_sign_up.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/development.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db/development.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,30 +45,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "D:/qwerty/Appointment",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "ruby.rails.projectView.checked": "true",
-    "ruby.structure.view.model.defaults.configured": "true",
-    "settings.editor.selected.configurable": "reference.settings.ide.settings.new.ui",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/qwerty/Appointment&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ruby.rails.projectView.checked&quot;: &quot;true&quot;,
+    &quot;ruby.structure.view.model.defaults.configured&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.new.ui&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "sqlite"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;sqlite&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Rails.RubyPracticeTeam-4">
     <configuration name="Appointment" type="RailsRunConfigurationType" factoryName="Rails">
       <module name="Appointment" />
@@ -209,7 +208,8 @@
       <workItem from="1689601249197" duration="259000" />
       <workItem from="1689601517639" duration="7184000" />
       <workItem from="1689608760960" duration="17381000" />
-      <workItem from="1689680836666" duration="24919000" />
+      <workItem from="1689680836666" duration="28727000" />
+      <workItem from="1689748751195" duration="6093000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <option name="closed" value="true" />
@@ -235,7 +235,15 @@
       <option name="project" value="LOCAL" />
       <updated>1689696028749</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="update">
+      <option name="closed" value="true" />
+      <created>1689709882915</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1689709882915</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -258,6 +266,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Appointment@Appointment.rcov" NAME="Appointment Coverage Results" MODIFIED="1689624497839" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Appointment" />
-    <SUITE FILE_PATH="coverage/RubyPracticeTeam_4@RubyPracticeTeam_4.rcov" NAME="RubyPracticeTeam-4 Coverage Results" MODIFIED="1689700988484" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="RubyPracticeTeam-4" />
+    <SUITE FILE_PATH="coverage/RubyPracticeTeam_4@RubyPracticeTeam_4.rcov" NAME="RubyPracticeTeam-4 Coverage Results" MODIFIED="1689765074735" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="RubyPracticeTeam-4" />
   </component>
 </project>
