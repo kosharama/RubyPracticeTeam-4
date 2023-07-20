@@ -21,8 +21,6 @@ class MeetsController < ApplicationController
     @meet = Meet.new(meet_params)
     if @meet.save
       redirect_to @meet, notice: 'Meet was successfully created.'
-    else
-      render :new
     end
   end
 

@@ -5,13 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ae3ac6f0-ed15-4079-b112-ebdde6d74975" name="Changes" comment="update">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/31e0d68f-c3bb-452e-a3ad-4dbb5949c2ad.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/bd7fc6cf-4d22-4860-b5c3-238850bc4455.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d14243b5-8cd7-4204-bfad-2d4eee6e0d5f.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d14243b5-8cd7-4204-bfad-2d4eee6e0d5f.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/meets_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/meets_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/users_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/meet.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/meet.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/meets/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/meets/_form.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/meets/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/meets/index.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/users/_form_sign_up.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/_form_sign_up.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/development.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db/development.sqlite3" afterDir="false" />
     </list>
@@ -209,7 +208,9 @@
       <workItem from="1689601517639" duration="7184000" />
       <workItem from="1689608760960" duration="17381000" />
       <workItem from="1689680836666" duration="28727000" />
-      <workItem from="1689748751195" duration="6093000" />
+      <workItem from="1689748751195" duration="7392000" />
+      <workItem from="1689806564627" duration="1193000" />
+      <workItem from="1689850793282" duration="7375000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <option name="closed" value="true" />
@@ -243,7 +244,15 @@
       <option name="project" value="LOCAL" />
       <updated>1689709882915</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="update">
+      <option name="closed" value="true" />
+      <created>1689765557144</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1689765557144</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -266,6 +275,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Appointment@Appointment.rcov" NAME="Appointment Coverage Results" MODIFIED="1689624497839" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Appointment" />
-    <SUITE FILE_PATH="coverage/RubyPracticeTeam_4@RubyPracticeTeam_4.rcov" NAME="RubyPracticeTeam-4 Coverage Results" MODIFIED="1689765074735" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="RubyPracticeTeam-4" />
+    <SUITE FILE_PATH="coverage/RubyPracticeTeam_4@RubyPracticeTeam_4.rcov" NAME="RubyPracticeTeam-4 Coverage Results" MODIFIED="1689856686883" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="RubyPracticeTeam-4" />
   </component>
 </project>

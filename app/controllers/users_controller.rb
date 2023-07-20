@@ -21,7 +21,7 @@ class UsersController < ApplicationController
 
   def login
     if !session[:user_id]
-      session[:user_id] = 2
+      session[:user_id] = 3
     end
 
     redirect_to root_path
@@ -30,11 +30,21 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     if @user.save
       redirect_to root_path, notice: 'Реєстрація пройшла успішно.'
-    else
-      format.html { render :index, status: :unprocessable_entity }
-      format.json { render json: @user.errors, status: :unprocessable_entity }
     end
   end
+
+  #def create
+  #  @user = User.new(user_params)
+  #  respond_to do |format|
+  #    if @user.save
+  #      format.html { redirect_to root_path, notice: 'Реєстрація пройшла успішно.' }
+  #      format.json { render json: { message: 'Реєстрація пройшла успішно.' }, status: :created }
+  #    else
+  #      format.html { render :index, status: :unprocessable_entity }
+  #      format.json { render json: @user.errors, status: :unprocessable_entity }
+  #    end
+  #  end
+  #end
 
   private
   def user_params
