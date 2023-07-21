@@ -7,6 +7,7 @@ Rails.application.routes.draw do
 
   get '/users/sign_in', to: 'users#sign_in'
   post '/users/login', to: 'users#login', as: :login
+  get '/users/logout', to: 'users#logout', as: :logout
 
   get '/users/sign_up', to: 'users#sign_up'
   post '/users/register', to: 'users#create', as: :register

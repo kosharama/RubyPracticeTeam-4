@@ -3,11 +3,16 @@
     <div class="header_inner">
       <div class="header_logo"><a class="logo" href="/doctors" >dr.practice</a></div>
 
-
-      <nav class="nav">
-        <a class="nav_link" href="/users/sign_in">Увійти</a>
-        <a class="nav_link" href="/users/sign_up">Реєстрація</a>
-      </nav>
+      <% if session[:user_id] %>
+        <nav>
+          <%= link_to "Вийти",  logout_path, method: :delete , class: 'nav_link' %>
+        </nav>
+      <% else %>
+        <nav class="nav">
+          <a class="nav_link" href="/users/sign_in">Увійти</a>
+          <a class="nav_link" href="/users/sign_up">Реєстрація</a>
+        </nav>
+      <% end %>
     </div>
   </div>
 </header>

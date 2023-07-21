@@ -69,6 +69,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     text-transform: uppercase;
+    color: #fff;
 }
 
 .nav_link {
@@ -180,7 +181,7 @@ body {
 
 /* FORM */
 
-.input1 {
+.input1, input[type="text"], input[type="email"], input[type="password"] {
     width: 300px;
     padding: 5px;
     margin: 4px 0 4px;

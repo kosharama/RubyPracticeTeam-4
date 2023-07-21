@@ -7,14 +7,24 @@
         <div class="container3">
           <h1 class="hh1">Вхід</h1>
 
+          <% if flash[:notice] %>
+            <p style="color: green"><%= flash[:notice] %></p>
+          <% end %>
+
+          <% if flash[:alert] %>
+            <p style="color: red"><%= flash[:alert] %></p>
+          <% end %>
+
           <%= form_with(model: @user, url: login_path) do |form| %>
 
             <div class="form-group">
-              <input type="text", class='input1', placeholder="Email">
+              <!-- <input type="text", class='input1', placeholder="Email"> -->
+              <%= form.email_field :email, placeholder: "Email" %>
             </div>
 
             <div class="form-group">
-              <input type="password", class='input1', placeholder="Password">
+              <!--  <input type="password", class='input1', placeholder="Password"> -->
+              <%= form.password_field :password, placeholder: "Password" %>
             </div>
 
             <div class="button_reg">
@@ -25,4 +35,7 @@
       </div>
     </div>
   </main>
+
+
+
 </div>

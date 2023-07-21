@@ -20,31 +20,29 @@ class UsersController < ApplicationController
   end
 
   def login
-    if !session[:user_id]
-      session[:user_id] = 3
+    user = User.find_by(email: params[:user][:email])
+    if user&.authenticate(params[:user][:password])
+      session[:user_id] = user.id
+      redirect_to root_path
+    else
+      flash[:alert] = "Invalid email or password"
+      redirect_to login_path
     end
+  end
 
+  def logout
+    session[:user_id] = nil
     redirect_to root_path
   end
+
   def create
     @user = User.new(user_params)
     if @user.save
-      redirect_to root_path, notice: 'Реєстрація пройшла успішно.'
+    else
+      flash[:alert] = "Помилка при реєстрації"
+      redirect_to register_path
     end
   end
-
-  #def create
-  #  @user = User.new(user_params)
-  #  respond_to do |format|
-  #    if @user.save
-  #      format.html { redirect_to root_path, notice: 'Реєстрація пройшла успішно.' }
-  #      format.json { render json: { message: 'Реєстрація пройшла успішно.' }, status: :created }
-  #    else
-  #      format.html { render :index, status: :unprocessable_entity }
-  #      format.json { render json: @user.errors, status: :unprocessable_entity }
-  #    end
-  #  end
-  #end
 
   private
   def user_params

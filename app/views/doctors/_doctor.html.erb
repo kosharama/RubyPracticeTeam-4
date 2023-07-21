@@ -3,7 +3,9 @@
     <h2 class="hdoc"><%= doctor.first_name %> <%= doctor.last_name %></h2>
     <p class="specialty"><%= doctor.specialty %></p>
     <%= link_to new_meet_path(doctor_id: doctor.id), class: "button1" do %>
-      <h3 class="button1">Записатись до лікаря</h3>
+      <% if session[:user_id] %>
+        <h3 class="button1">Записатись до лікаря</h3>
+      <% end %>
     <% end %>
   </div>
 </div>
